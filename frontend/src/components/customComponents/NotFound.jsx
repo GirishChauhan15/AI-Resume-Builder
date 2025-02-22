@@ -1,4 +1,4 @@
-import notFound from "../../assets/not_Found.jpg";
+import notFound from "../../assets/not_found.jpg";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "../ui/button";
 import { useNavigate } from "react-router-dom";
