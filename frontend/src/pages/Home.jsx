@@ -125,7 +125,7 @@ function Home() {
     <section className="pt-10 min-[380px]:pt-20">
       <article className="grid grid-cols-1 sm:grid-cols-2 min-h-[600px] max-[450px]:p-2">
         <aside className=" flex justify-center items-center flex-col px-4 py-8">
-          <h1 className="max-[200px]:text-2xl [text-shadow:_1px_1px_2px_rgb(0_0_0)] max-[400px]:text-4xl text-5xl tracking-wider font-extrabold">
+          <h1 className="max-[200px]:text-2xl max-[400px]:text-4xl text-5xl tracking-wider font-extrabold">
             Build Your Perfect Resume with
             <span className="text-red-400"> AI</span> in Minutes
           </h1>
@@ -251,7 +251,7 @@ function Home() {
               key={faq?.id} className={`border-2 border-zinc-300 w-full rounded-lg p-4 md:w-3/4 m-auto select-none bg-white ${active !== faq?.id && 'hover:bg-zinc-300'}`}>
             <div
               className={`flex flex-wrap justify-between items-center ${
-                active && "mb-1"
+                active === faq?.id && "mb-1"
               }`}
             >
               <h3 aria-controls={`accordion-panel-'${faq?.id}`} className="font-semibold text-sm w-[80%]">

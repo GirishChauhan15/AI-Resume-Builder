@@ -8,7 +8,7 @@ function SkillsPreview({resumeInfo}) {
             {resumeInfo?.skills?.length > 0 ? resumeInfo?.skills?.map(skill=>(
                 <li key={skill?._id} className='flex items-center justify-between gap-2 flex-wrap w-[90%]'>
                     <h3 className='text-xs'>{skill?.name}</h3>
-                    <div className='h-2 bg-gray-300 w-[120px]'>
+                    <div className='h-2 bg-gray-300 w-[120px] skill-color'>
                        <span style={{width: skill?.rating+ '%'}} className={`h-2 block ${resumeInfo?.themeBg}`}>
                         </span>
                     </div>
