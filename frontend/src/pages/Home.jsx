@@ -121,7 +121,7 @@ function Home() {
             <Spinner className={'grid m-auto'} width='w-[3rem]' />
         </div> }
 
-    {(!loading && !user) && status === false ?
+    {!loading && status === false ?
     <section className="pt-10 min-[380px]:pt-20">
       <article className="grid grid-cols-1 sm:grid-cols-2 min-h-[600px] max-[450px]:p-2">
         <aside className=" flex justify-center items-center flex-col px-4 py-8">

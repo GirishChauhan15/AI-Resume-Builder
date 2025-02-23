@@ -12,6 +12,7 @@ const passwordRegex =
 const options = {
     httpOnly: true,
     secure: true,
+    sameSite: 'None', 
 };
 const generateAllTokens = async (userId) => {
     try {
