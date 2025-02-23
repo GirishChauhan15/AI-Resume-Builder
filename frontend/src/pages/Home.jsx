@@ -273,8 +273,9 @@ function Home() {
           )): <p className="grid col-span-full text-center tracking-widest font-mono font-semibold">No FAQs Available!</p>}
         </ul>
       </article>
-      <footer className="max-[450px]:px-4 max-[640px]:px-20 py-10 px-10 bg-red-400 w-full cta-full flex flex-col justify-between items-center">
+      <footer className="max-[450px]:px-4 max-[640px]:px-20 py-10 px-10 bg-red-400 w-full cta-full flex flex-col justify-between items-center relative">
       <p className="text-sm text-zinc-900">© {new Date().getFullYear()} Ai Resume Builder. All Rights Reserved.</p>
+      <a target="_blank" className="absolute bottom-0 right-0 text-[0.5rem]" href="https://www.flaticon.com/free-icons/robot" title="robot icons">Robot icons created by juicy_fish - Flaticon</a>
       </footer>
     </section>
     : <Dashboard />
